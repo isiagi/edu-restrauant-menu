@@ -1,0 +1,123 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.toggle{
+  margin: 30px;
+  font-size:30px;
+  cursor:pointer;
+  color: white;
+}
+
+/* landing page */
+#land-page{
+    background-image: url(./food.webp);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.title-background{
+  background: #070707;
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+    text-align: center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /* menu */
+#menu{
+  background-color: #000;
+  /* margin-top: -27px; */
+  padding: 20px;
+}
+.menu-title{
+  color: #eee;
+  text-align: center;
+  padding: 25px;
+  font-size: 2em;
+}
+p{
+  color: #eee;
+
+}
+.menu-price{
+  float: right;
+}
+/* Rest info */
+#resturant-info{
+  background-color: #070707;
+  padding: 20px;
+}
+.info-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.rest-info-title{
+  color: white;
+  text-align: center;
+}
+.address-content, .business-hour{
+  padding: 10px;
+}
+.address, .hours{
+  font-size: 1em !important;
+  text-align: center;
+
+
+}
+.phone{
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:768px){
+  .info-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .address-content, .business-hours{
+    border-right: 1px solid #eee;
+  }
+}

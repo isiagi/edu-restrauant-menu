@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tab.css">
+    <title>Document</title>
+</head>
+<body>
+   <main>
+       <section id="land-page">
+        <span class="toggle" onclick="openNav()">&#9776;</span>
+        <header class="title-background">
+            <h2 class="title">edu restruant</h2>
+        </header>
+    </section>
+    <section id="mySidenav" class="sidenav ">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#resturant-info">About</a>
+        <!-- <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a> -->
+    </section>
+    <section id="menu">
+        <h2 class="menu-title">Menu</h2>
+        <section class="tabs-container">
+            <section class="tabs">
+                <button class="tabheader active-tab" data-tab="1">sushi</button>
+                <button class="tabheader" data-tab="2">Drinks</button>
+                <button class="tabheader" data-tab="3">Appetilizer</button>
+                <button class="tabheader" data-tab="4">desert</button>
+                <button class="tabheader"data-tab="5">dinner</button>
+            </section>
+            <section class="tabsection show-tab" id="tabsection-1">
+                <p>1.spicy tuna<span class="menu-price">$100</span></p>
+                <p>2.tuna<span class="menu-price">$50</span></p>
+                <p>3.spicy tuna<span class="menu-price">$40</span></p>
+                <p>4.spicy una<span class="menu-price">$200</span></p>
+            </section>
+            <section class="tabsection hide-tab" id="tabsection-2">
+                <p>1.tea<span class="menu-price">$100</span></p>
+                <p>2.milk<span class="menu-price">$50</span></p>
+                <p>3.charclet tea<span class="menu-price">$40</span></p>
+                <p>4.black tea<span class="menu-price">$200</span></p>
+            </section>
+            <section class="tabsection hide-tab" id="tabsection-3">
+                <p>1.tuuuy<span class="menu-price">$100</span></p>
+                <p>2.tua<span class="menu-price">$50</span></p>
+                <p>3.spicyuyuy tuna<span class="menu-price">$40</span></p>
+                <p>4.spi una<span class="menu-price">$200</span></p>
+            </section>
+            <section class="tabsection hide-tab" id="tabsection-4">
+                <p>1.spicy tuna<span class="menu-price">$100</span></p>
+                <p>2.tuna<span class="menu-price"class="menu-price">$50</span></p>
+            </section>
+            <section class="tabsection hide-tab" id="tabsection-5">
+                <p>1.spicy tuna<span class="menu-price">$100</span></p>
+                <p>2.tuna<span class="menu-price">$50</span></p>          
+            </section>
+        </section>
+    </section>
+    <section id="resturant-info">
+        <section class="info-container">
+            <section class="address-content">
+                <h2 class="rest-info-title">Address</h2>
+                <p class="address">1234 Lumuba Avenue</p>
+                <p class="address">Kampala</p>
+            </section>
+            <section class="business-hours">
+                <h2 class="rest-info-title">Business Hours</h2>
+                <p class="hours">Monday-Friday:9am-5pm</p>
+                <p class="hours">Saturday-Sunday:</p>
+            </section>
+            <section class="contact-content">
+                <h2 class="rest-info-title">Pick Up</h2>
+                <p class="phone">Call us:123-45-789</p>
+            </section>
+        </section>
+    </section>
+
+   </main>
+
+
+<script src="./script.js"></script>
+<script src="./tab.js"></script>
+</body>
+</html>
