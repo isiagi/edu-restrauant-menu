@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;  
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        header{
+            background-image: url('./images/bread.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+            position: relative;
+        }
+        .container, .foods-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            padding-bottom: 100px;
+        }
+        .image{
+            margin-right: 7px;
+            margin-left: 7px;
+            position: relative;
+            overflow: hidden;
+        }
+        .add-cart{
+            position: absolute;
+            width: 100%;
+            background-color: darkgrey;
+            opacity: 0;
+            cursor: pointer;
+            text-align: center;
+        }
+        .image:hover .cart1,
+        .image:hover .cart2,
+        .image:hover .cart3{
+            bottom: 50px;
+            opacity: 1;
+            padding: 10px;
+            text-decoration: none;
+        }
+            /* cart page */
+            .foods-container{
+                max-width: 650px;
+                justify-content: space-around;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            .foods-container ion-icon{
+                font-size: 25px;
+                color: blue;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .food-header{
+                width: 100%;
+                max-width: 650px;
+                display: flex;
+                justify-content: flex-start;
+                border-bottom: 4px solid lightgrey;
+                margin: 0 auto;
+            }
+            .food-title{
+                width: 45%;
+            }
+            .price{
+                width: 15%;
+                border-bottom: 1px solid lightgrey;
+                display: flex;
+                align-items: center;
+                /* margin-left: 100px;
+                margin-right: 100px;*/
+            }
+            .priced{
+                width: 15%;
+                border-bottom: 1px solid lightgrey;
+                display: flex;
+                align-items: center;
+                margin-left: 100px;
+            }
+            .total{
+                width: 10%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+                border-bottom:1px solid lightgrey ;
+            }
+            .quantity{
+                width: 30%;
+                border-bottom:1px solid lightgrey ;
+                display: flex;
+                align-items: center;
+            }
+            .product{
+                width: 45%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+                border-bottom: 1px solid lightgrey;
+                
+            }
+            .icom{
+                max-width: 60px;
+            position: relative;
+            overflow: hidden;
+            /* margin-right: 20px; */
+            
+            }  
+        nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 50p 60px 0 60px;
+        margin-top: 50px;
+        }
+        nav li{
+            list-style-type: none;
+            display: inline;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        nav li span{
+            padding-left: 5px;
+        }
+        li a{
+            padding: 5px;
+            background-color: #fff;
+            text-decoration: none;
+        }
+        .title{
+            margin-top: 50px;
+            position: absolute;
+            margin-left: 10px;
+            color: #fff;
+        }
+         #menu-list{
+            margin: 30px;
+            box-sizing: border-box;
+        }
+        #menu-list ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        #menu-list li{
+            padding: 20px;
+            margin: 15px 10px;
+            border: 2px solid transparent;
+        }
+        #menu-list li:hover{
+         border-color: #000;
+        }
+        .delete{
+            float: right;
+            background-color: maroon;
+            border-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        .amount{
+            margin-left: 500px; 
+            box-sizing: border-box;
+
+            
+        }
+        #add-menu{
+            width: 400px;
+            margin: 0 auto;
+        }
+        #add-menu input, .dues{
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #add-menu button{
+            padding: 5px;
+            border-radius: 10px;
+            background-color: rgb(55, 226, 55);
+        }
+        .ting{
+            margin-left: 0;
+        }  
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="outLay"></div>
+        <h2 class="title">EDU RESTRUANT</h2>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="cart"><a href="#">ORDER <ion-icon name="cart-outline"></ion-icon><span>0</span></a></li>
+        </nav>
+    </header>
+    <!-- <div class="foods-container">
+        <div class="food-header">
+            <h5 class="food-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5> 
+        </div>
+        <div class="product"></div>
+    </div> -->
+
+    <div id="menu-list">
+        <h2>check through the Menu</h2>
+        <ul>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+        </ul>
+    </div>
+    <form id="add-menu">
+        <input type="text" value="" id="input" required>
+        <input type="text" name="" id="dues" re>
+        <button id="button">ADD TO MENU</button>
+    </form>
+    <script src="./page.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+</body>
+</html>
