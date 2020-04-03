@@ -1,4 +1,19 @@
 let tabheader = document.querySelectorAll(".tabheader");
+// let add = document.querySelector("#add");
+// let input = document.querySelector("#input");
+// add.addEventListener("click", () =>{
+//     let value = input.value;
+//     let p = document.createElement('p');
+//     let work = p.textContent = value;
+//     tabheader.forEach((state) => {
+//         if(state.target.classList.contains("active-tab")){
+//             state.appendChild(work);
+//         }else{
+
+//         }
+//     })
+    
+// })
 
 tabheader.forEach((button) => {
     button.onclick = changeTab; 
@@ -39,6 +54,19 @@ function changeTab(){
         newSection.classList.remove("hide-tab");
         newSection.classList.add("show-tab");
     }
-    
+    let add = document.querySelector("#add");
+    let input = document.querySelector("#input");
+    add.addEventListener('click', () => {
+        let value = input.value;
+        console.log(value);
+        let section = document.querySelector(".tabsection");
+        if(section.classList.contains("show-tab")){
+            console.log('checked');
+            
+        }else{
+            console.log("not checked");
+            
+        }
+    })
 }
 
