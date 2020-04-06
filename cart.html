@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <div class="outLay"></div>
+        <h2 class="title">EDU RESTRUANT</h2>
+        <nav>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="cart"><a href="#">ORDER <ion-icon name="restaurant-outline"></ion-icon><span>0</span></a></li>
+        </nav>
+    </header>
+    <!-- <div class="foods-container">
+        <div class="food-header">
+            <h5 class="food-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5> 
+        </div>
+        <div class="product"></div>
+    </div> -->
+
+    <h2 style="text-align: center;">check through the Menu</h2>
+    <div id="menu-list">
+        <ul>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="ting">bread</span>
+                <span class="amount">$9</span>
+                <span class="delete">delete</span>
+            </li>
+        </ul>
+    </div>
+    <div class="form">
+    <form id="add-menu">
+        <label for="input">FOOD</label><br>
+        <input type="text" value="" id="input" required><br>
+        <label for="dues">AMOUNT</label><br>
+        <input type="text" name="" id="dues" required><br>
+        <br>
+        <button id="button">ADD TO MENU</button>
+    </form>
+    </div>
+    <section id="resturant-info">
+        <section class="info-container">
+            <section class="address-content">
+                <h2 class="rest-info-title">Address</h2>
+                <p class="address">1234 Lumuba Avenue</p>
+                <p class="address">Kampala</p>
+            </section>
+            <section class="business-hours">
+                <h2 class="rest-info-title">Business Hours</h2>
+                <p class="hours">Monday-Friday:8am-5pm</p>
+                <p class="hours">Saturday-Sunday:</p>
+            </section>
+            <section class="contact-content">
+                <h2 class="rest-info-title">Pick Up</h2>
+                <p class="phone">Call us:123-45-789</p>
+            </section>
+        </section>
+    </section>
+
+    <script src="./page.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
